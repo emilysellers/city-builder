@@ -1,0 +1,29 @@
+main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin: 10px;
+}
+
+img {
+    width: 250px;
+}
+
+section {
+    display: grid;
+}
+
+article {
+    display: grid;
+    grid-template-rows: 100px 300px 75px 1fr;
+    border: 1px solid rgb(132, 101, 21);
+    width: 550px;
+    background-color: rgb(221, 221, 205);
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: start;
+    justify-content: center;
+}
+
+header {
+    background-color: goldenrod;
+}
