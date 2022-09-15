@@ -31,6 +31,7 @@ nameInput.addEventListener('input', () => {
 climateSelect.addEventListener('change', () => {
     city.climate = climateSelect.value;
     // change article background
+    articleDisplay.classList.add(city.climate);
     displayCity();
 });
 
