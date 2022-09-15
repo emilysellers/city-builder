@@ -37,6 +37,13 @@ architectureSelect.addEventListener('change', () => {
     displayCity();
 });
 
+addAttractionButton.addEventListener('click', () => {
+    const attraction = attractionInput.value;
+    city.attractions.push(attraction);
+    displayCity();
+    attractionInput.value = '';
+});
+
 /* Display Functions */
 function displayCity() {
     // add themes and fonts

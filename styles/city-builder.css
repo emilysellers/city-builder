@@ -23,7 +23,7 @@ label {
 
 article {
     display: grid;
-    grid-template-rows: 75px 300px 75px 1fr;
+    grid-template-rows: 75px 275px 75px 1fr;
     border: 1px solid rgb(132, 101, 21);
     width: 550px;
     background-color: rgb(221, 221, 205);
