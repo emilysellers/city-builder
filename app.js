@@ -6,6 +6,7 @@ const cityHeader = document.getElementById('city-header');
 const cityClimate = document.getElementById('climate-image');
 const cityArchitecture = document.getElementById('architecture-image');
 const attractionsList = document.getElementById('attractions-list');
+const articleDisplay = document.getElementById('city-article');
 // DOM for control events
 const nameInput = document.getElementById('name-input');
 const climateSelect = document.getElementById('climate-select');
@@ -29,6 +30,7 @@ nameInput.addEventListener('input', () => {
 
 climateSelect.addEventListener('change', () => {
     city.climate = climateSelect.value;
+    // change article background
     displayCity();
 });
 

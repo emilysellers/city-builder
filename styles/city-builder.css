@@ -37,3 +37,65 @@ article {
 header {
     background-color: goldenrod;
 }
+
+.city-image-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tropical {
+    color: rgb(74, 102, 226);
+    background-color: rgb(99, 219, 195);
+    border: 3px solid coral;
+    display: grid;
+    grid-template-rows: 75px 275px 75px 1fr;
+    width: 550px;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.mediterranean {
+    color: rgb(249, 249, 249);
+    background-color: rgb(69, 170, 220);
+    border: 3px solid rgb(202, 55, 141);
+    display: grid;
+    grid-template-rows: 75px 275px 75px 1fr;
+    width: 550px;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.arid {
+    color: rgb(91, 114, 45);
+    background-color: rgb(215, 173, 115);
+    border: 3px solid rgb(226, 103, 32);
+    display: grid;
+    grid-template-rows: 75px 275px 75px 1fr;
+    width: 550px;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.subarctic {
+    color: rgb(39, 108, 62);
+    background-color: rgb(226, 241, 238);
+    border: 3px solid rgb(30, 32, 80);
+    display: grid;
+    grid-template-rows: 75px 275px 75px 1fr;
+    width: 550px;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+}
