@@ -1,3 +1,7 @@
+header {
+    background-color: goldenrod;
+}
+
 main {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -22,54 +26,39 @@ label {
 }
 
 article {
-    display: grid;
-    grid-template-rows: 75px 275px 75px 1fr;
-    border: 1px solid rgb(132, 101, 21);
+    border: 3px solid rgb(132, 101, 21);
     width: 550px;
     background-color: rgb(221, 221, 205);
+    display: grid;
+    grid-template-rows: 50px 260px 65px 150px;
     justify-items: center;
     align-content: space-evenly;
     align-items: start;
-    justify-content: center;
     padding: 20px;
 }
 
-header {
-    background-color: goldenrod;
+.city-article-text {
+    display: grid;
+    grid-template-rows: 75px 275px 75px 1fr;
+    padding: 20px;
 }
 
 .city-image-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
 }
 
 .tropical {
     color: rgb(74, 102, 226);
     background-color: rgb(99, 219, 195);
     border: 3px solid coral;
-    display: grid;
-    grid-template-rows: 75px 275px 75px 1fr;
-    width: 550px;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: start;
-    justify-content: center;
-    padding: 20px;
 }
 
 .mediterranean {
     color: rgb(249, 249, 249);
     background-color: rgb(69, 170, 220);
     border: 3px solid rgb(202, 55, 141);
-    display: grid;
-    grid-template-rows: 75px 275px 75px 1fr;
-    width: 550px;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: start;
-    justify-content: center;
-    padding: 20px;
 }
 
 .arid {
@@ -77,25 +66,39 @@ header {
     background-color: rgb(215, 173, 115);
     border: 3px solid rgb(226, 103, 32);
     display: grid;
-    grid-template-rows: 75px 275px 75px 1fr;
-    width: 550px;
     justify-items: center;
-    align-content: space-evenly;
-    align-items: start;
-    justify-content: center;
-    padding: 20px;
 }
 
 .subarctic {
     color: rgb(39, 108, 62);
     background-color: rgb(226, 241, 238);
     border: 3px solid rgb(30, 32, 80);
+}
+
+.baroque {
+    font-family: 'Berkshire Swash';
+    font-size: 1.2em;
     display: grid;
-    grid-template-rows: 75px 275px 75px 1fr;
-    width: 550px;
     justify-items: center;
-    align-content: space-evenly;
-    align-items: start;
-    justify-content: center;
-    padding: 20px;
+}
+
+.modern {
+    font-family: 'Bebas Neue';
+    font-size: 1.2em;
+    display: grid;
+    justify-items: center;
+}
+
+.gothic {
+    font-family: 'Kaushan Script';
+    font-size: 1.2em;
+    display: grid;
+    justify-items: center;
+}
+
+.industrial {
+    font-family: 'Aboreto';
+    font-size: 1.2em;
+    display: grid;
+    justify-items: center;
 }

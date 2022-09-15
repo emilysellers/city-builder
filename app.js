@@ -7,6 +7,7 @@ const cityClimate = document.getElementById('climate-image');
 const cityArchitecture = document.getElementById('architecture-image');
 const attractionsList = document.getElementById('attractions-list');
 const articleDisplay = document.getElementById('city-article');
+const cityArticleText = document.getElementById('city-article-text');
 // DOM for control events
 const nameInput = document.getElementById('name-input');
 const climateSelect = document.getElementById('climate-select');
@@ -16,7 +17,7 @@ const addAttractionButton = document.getElementById('add-attraction-button');
 
 /* State */
 let city = {
-    name: 'Paradise City',
+    name: 'Your City',
     climate: 'tropical',
     architecture: 'baroque',
     attractions: [],
@@ -31,12 +32,13 @@ nameInput.addEventListener('input', () => {
 climateSelect.addEventListener('change', () => {
     city.climate = climateSelect.value;
     // change article background
-    articleDisplay.classList.add(city.climate);
+    articleDisplay.className = city.climate;
     displayCity();
 });
 
 architectureSelect.addEventListener('change', () => {
     city.architecture = architectureSelect.value;
+    cityArticleText.className = city.architecture;
     displayCity();
 });
 
