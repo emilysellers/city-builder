@@ -40,8 +40,9 @@ architectureSelect.addEventListener('change', () => {
 addAttractionButton.addEventListener('click', () => {
     const attraction = attractionInput.value;
     city.attractions.push(attraction);
-    displayCity();
+    displayAttractions();
     attractionInput.value = '';
+    console.log(attractionInput.value);
 });
 
 /* Display Functions */
@@ -52,15 +53,17 @@ function displayCity() {
     cityArchitecture.src = 'assets/' + city.architecture + '.jpeg';
 }
 
-/* function displayAttractions() {
+function displayAttractions() {
+    attractionsList.innerHTML = '';
+
     for (let attraction of city.attractions) {
         const li = document.createElement('li');
         li.textContent = attraction;
         attractionsList.append(li);
     }
-} */
+}
 
 // (don't forget to call any display functions you want to run on page load!)
 
 displayCity();
-// displayAttractions();
+displayAttractions();
