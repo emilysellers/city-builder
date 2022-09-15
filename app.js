@@ -42,7 +42,6 @@ addAttractionButton.addEventListener('click', () => {
     city.attractions.push(attraction);
     displayAttractions();
     attractionInput.value = '';
-    console.log(attractionInput.value);
 });
 
 /* Display Functions */
